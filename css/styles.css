@@ -48,7 +48,8 @@ section.sidebar {
   color: white;
   text-align: center;
   background-color: rgba(19, 59, 59, 0.9);
-  max-width: 290px;
+  /*max-width: 290px;*/
+  width: 290px;
   top: 80px;
   bottom: 0;
 }
@@ -57,11 +58,17 @@ section.sidebar {
   margin: auto;
   padding: 10px;
 }
+.sidebar-anchors a {
+  color: white;
+  display: block;
+  text-decoration: none;
+  padding: 2px;
+}
 .photo {
-  margin-top: 40px;
+  margin-top: 20px;
   height: 150px;
   border: 8px solid;
-  display: flex;
+  display: flex;/*¿?¿?¿?¿?*/
   align-items: center;
   justify-content: center;
 }
@@ -72,105 +79,184 @@ section.sidebar {
   padding: 6px;
   padding-top: 0px;
 }
-
-section {
-
-}
-
 /*--------------------Main--------------------*/
 .section-style {
   position: absolute;
   left: 300px;
   right: 10px;
   margin-top: 80px;
-  border: solid yellow;
+  background-color: rgba(108, 109, 97, 0.5);
+  /*border: solid yellow;*/
   color: white;
+  text-align: center;
+}
+/*Title sections*/
+[class*=section] h2 {
+  color: orange;
+  margin-top: 50px;
+}
+/*sections mark¿?*/
+.container {
+  display: flex;
+  justify-content: space-around;
+  height: 70%;
+  margin: 50px;
+  /*border: solid orange;*/
+}
+.paper {
+  width: 35%;
+  background-color: rgba(0, 128, 128, 0.5);
+  text-align: justify;
+  padding: 40px;
+  box-sizing: border-box;
 }
 /*------Positions of sections------*/
 .section-welcome {
   top: 0%;
   bottom: 0px;
-  border: solid red;
-  text-align: center;
 }
 .section-know-me-more {
   top: 100%;
   bottom: -100%;
-  border: solid blue;
 }
 .section-what-i-do {
   top: 200%;
   bottom: -200%;
-  border: solid orange;
 }
 .section-my-skills {
   top: 300%;
   bottom: -300%;
-  border: solid red;
 }
 .section-resume {
   top: 400%;
   bottom: -400%;
-  border: 10px solid green;
 }
 .section-my-work {
   top: 500%;
   bottom: -500%;
-  border: 4px solid cyan;
 }
 .section-client-speak {
   top: 600%;
   bottom: -600%;
-  border: solid greenyellow;
 }
 .section-blog {
   top: 700%;
   bottom: -700%;
-  border: solid magenta;
 }
 .section-get-in-touch {
   top: 800%;
   bottom: -800%;
-  border: solid cyan;
 }
 
 /*----------First Section----------*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*------*/
-.container-main-section {
-  margin: auto;
-  width: 90%;
-  height: 90%;
-  background-color: teal;
-  padding: 20px;
-  padding-top: 0px;
-  box-sizing: border-box;
+.section-welcome h1 {
+  font-size: 3rem;
+  margin-top: 150px;
 }
-/*----Cards----*/
-.cards-services {
+.section-welcome a {
+  position: relative;
+  color: white;
+  text-decoration: none;
+  background-color: teal;
+  padding: 15px;
+  border-radius: 40%;
+  top: 20%;
+}
+/*----------Second Section----------*/
+
+
+
+/*---------Third Section----------*/
+.field {
+  display: flex;
+  margin-bottom: 33%;
+}
+.service {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.service i {
+  transform: scale(1.5);
+}
+.field p {
+  margin-left: 20px;
+}
+/*----------Fourth Section----------*/
+.section-my-skills .container .paper p {
+  margin-bottom: 70px;
+}
+.skill {
+  margin-bottom: 30px;
+}
+.counter {
+  display: flex;
+  border-radius: 16px;
+  border: solid gray;
+  height: 5px;
+}
+.counter div:first-child {
+  background-color: greenyellow;
+}
+.skill-level {
+  display: flex;
+  justify-content: space-between;
+}
+.skill-level h4 {
+  margin: 0%;
+}
+.counter-1 div:first-child {
+  width: 70%;
+}
+.counter-2 div:first-child {
+  width: 40%;
+}
+.counter-3 div:first-child {
+  width: 0%;
+}
+.counter-4 div:first-child {
+  width: 5%;
+}
+.counter-5 div:first-child {
+  width: 40%;
+}
+.counter-6 div:first-child {
+  width: 5%;
+}
+.counter-7 div:first-child {
+  width: 1%;
+}
+.counter-8 div:first-child {
+  width: 40%;
+}
+/*----------Fifth Section----------*/
+.section-resume .container .paper .container-academy {
   display: flex;
   flex-wrap: wrap;
+  box-sizing: border-box;
+}
+.academy {
+  background-color: teal;
+  border: solid;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 8px;
+}
+.academy h4, .academy p {
+  margin: 0%;
+}
+/*----------Sixth Section----------*/
+.container-cards {
+  display: flex;
+  width: 100%;
 }
 .card {
-  color: white;
   background-color: rgb(23, 107, 107);
-  max-width: 250px;
   padding: 15px;
-  text-align: justify;
   border: solid;
-  border-radius: 12px;
+  border-radius: 8px;
+  max-width: 250px;
   margin: auto;
   margin-top: 40px;
   box-sizing: border-box;
@@ -178,47 +264,45 @@ section {
 .card h4 {
   text-align: center;
 }
-/*---------------*/
+/*----------Seventh Section----------*/
+.recommend div {  
+  border: solid;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(23, 134, 185);
+}
+.recommend div i {
+  transform: scale(4);
+}
+/*----------Eighth Section----------*/
+/*Same like my work section*/
 
-
-
-
-
-
+/*----------Nineth Section----------*/
+.message {
+  width: 100%;
+  height: 100px;
+}
+.contact {
+  display: flex;
+  margin-top: 30px;
+}
+.contact div:first-child {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact div:first-child i {
+  transform: scale(1.5);
+}
+.contact div h4, .contact div p {
+  margin: 0%;
+}
 /*--------------------Footer--------------------*/
 footer div.footer {
   top: 900%;
-}
-
-
-
-
-
-
-
-
-
-
-
-/*Upbar?*/
-section.upbar {
-  margin-left: 300px;
-  display: flex;
-  margin-top: 10px;
-}
-section.upbar img {
-  margin: auto;
-  margin-top: 0;
-  z-index: 0;
-}
-
-/*Background image*/
-div.background {
-  position: absolute;
-  left: 0;
-  margin-top: 10px;
-}
-div.background img {
-  width: 100%;
-  z-index: 1;
 }
