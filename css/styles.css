@@ -5,42 +5,43 @@
 
 body {
   background-image: url(../img/sky-pexels.jpg);
-  background-size: cover;
+  background-size: contain;
+  background-repeat: repeat-y;
 }
 
 
 
-/*--------------------Navigation--------------------*/
+/*--------------------Nav--------------------*/
 nav {
-  position: sticky;
-  top: 0;
   background-color: rgba(49, 82, 82, 0.9);
   display: flex;
-  align-items: center;
-  z-index: 1;
 }
 nav h1 {
   background-color: white;
-  width: 370px;
+  width: 240px;
+  padding: 15px;
   text-align: center;
-  padding-top: 17px;
-  padding-bottom: 17px;
   margin: auto;
+  box-sizing: border-box;
 }
 nav div {
-  justify-content: space-between;
   display: flex;
+  justify-content: space-between;
   width: 100%;
+  box-sizing: border-box;
+  flex-wrap: wrap;
 }
-nav a {
+nav div a {
   text-decoration: none;
   color: white;
-  margin-left: 150px;
+  padding: 20px;
+  margin: auto;
 }
 nav i.astronaut {
   color: white;
-  margin-right: 150px;
-  transform: scale(2.5);
+  padding: 20px;
+  margin: auto;
+  transform: scale(3);
 }
 /*------------------------Sidebar------------------------*/
 section.sidebar {
@@ -48,15 +49,14 @@ section.sidebar {
   color: white;
   text-align: center;
   background-color: rgba(19, 59, 59, 0.9);
-  /*max-width: 290px;*/
-  width: 290px;
-  top: 80px;
-  bottom: 0;
+  width: 200px;/*here*/
+  /*width: 290px;*/
+  top: 110px;
+  left: 10px;
+  bottom: 10px;
 }
 .container-sidebar {
-  width: 80%;
-  margin: auto;
-  padding: 10px;
+  padding: 20px;
 }
 .sidebar-anchors a {
   color: white;
@@ -66,101 +66,76 @@ section.sidebar {
 }
 .photo {
   margin-top: 20px;
-  height: 150px;
+  /*max-width: 150px;/**/
+  height: 140px;
   border: 8px solid;
   display: flex;/*¿?¿?¿?¿?*/
   align-items: center;
   justify-content: center;
+  box-sizing: border-box;
 }
 .photo i {
-  transform: scale(8);
+  transform: scale(7);
 }
 .icons i {
-  padding: 6px;
+  padding: 8px;
   padding-top: 0px;
 }
 /*--------------------Main--------------------*/
+/*main {
+  border: solid red;
+}*/
 .section-style {
-  position: absolute;
-  left: 300px;
-  right: 10px;
-  margin-top: 80px;
+  margin-left: 210px;
+  margin-top: 15px;
+  margin-bottom: 40px;
+  min-height: 450px;
   background-color: rgba(108, 109, 97, 0.5);
-  /*border: solid yellow;*/
+  border: solid rgba(108, 109, 97, 0.7);
   color: white;
   text-align: center;
+  padding-bottom: 40px;
 }
 /*Title sections*/
 [class*=section] h2 {
   color: orange;
-  margin-top: 50px;
 }
 /*sections mark¿?*/
 .container {
   display: flex;
   justify-content: space-around;
-  height: 70%;
-  margin: 50px;
+  width: 100%;
+  min-height: 400px;
+  box-sizing: border-box;
+  flex-wrap: wrap;
   /*border: solid orange;*/
 }
 .paper {
-  width: 35%;
+  /*width: 35%;*/
   background-color: rgba(0, 128, 128, 0.5);
+  border: solid rgba(0, 128, 128, 0.7);
   text-align: justify;
-  padding: 40px;
+  padding: 25px;
+  max-width: 350px;
+  min-width: 240px;
+  width: max-content;/*how*/
+  margin: 20px;
   box-sizing: border-box;
 }
-/*------Positions of sections------*/
-.section-welcome {
-  top: 0%;
-  bottom: 0px;
-}
-.section-know-me-more {
-  top: 100%;
-  bottom: -100%;
-}
-.section-what-i-do {
-  top: 200%;
-  bottom: -200%;
-}
-.section-my-skills {
-  top: 300%;
-  bottom: -300%;
-}
-.section-resume {
-  top: 400%;
-  bottom: -400%;
-}
-.section-my-work {
-  top: 500%;
-  bottom: -500%;
-}
-.section-client-speak {
-  top: 600%;
-  bottom: -600%;
-}
-.section-blog {
-  top: 700%;
-  bottom: -700%;
-}
-.section-get-in-touch {
-  top: 800%;
-  bottom: -800%;
-}
-
 /*----------First Section----------*/
 .section-welcome h1 {
-  font-size: 3rem;
-  margin-top: 150px;
+  font-size: 2.5rem;
+}
+.section-welcome h2 {
+  margin-bottom: 200px;
 }
 .section-welcome a {
-  position: relative;
+  margin-top: 100px;
   color: white;
   text-decoration: none;
   background-color: teal;
   padding: 15px;
-  border-radius: 40%;
-  top: 20%;
+  border-radius: 45%;
 }
 /*----------Second Section----------*/
 
@@ -250,6 +225,7 @@ section.sidebar {
 .container-cards {
   display: flex;
   width: 100%;
+  flex-wrap: wrap;
 }
 .card {
   background-color: rgb(23, 107, 107);
@@ -289,6 +265,7 @@ section.sidebar {
 .contact {
   display: flex;
   margin-top: 30px;
+  min-width: 200px;/*¿?*/
 }
 .contact div:first-child {
   width: 20%;
@@ -304,5 +281,10 @@ section.sidebar {
 }
 /*--------------------Footer--------------------*/
 footer div.footer {
-  top: 900%;
+  text-align: center;
+  color: white;
+  margin-left: 210px;
+  background-color: rgba(124, 124, 124, 0.5);
+  border: solid rgba(124, 124, 124, 0.7);
+  padding: 15px;
 }
