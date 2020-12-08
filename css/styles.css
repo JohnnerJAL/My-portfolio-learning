@@ -15,7 +15,7 @@ body {
 }
 label {
   position: fixed;
-  right: 0;
+  right: 10px;
   top: 50%;
   display: none;
   width: 10px;
@@ -25,7 +25,7 @@ label {
 }
 label:hover {
   cursor: pointer;
-  background: rgba(124, 124, 124, 0.7);
+  background: rgba(0, 128, 128, 0.5);
 }
 label i {
   color: white;
@@ -44,6 +44,9 @@ label i {
     margin-left: 0%;
   }
   main section.section-style {
+    margin-left: 0px;
+  }
+  body footer div.footer {
     margin-left: 0px;
   }
 }
