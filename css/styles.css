@@ -14,14 +14,15 @@ body {
   display: none;
 }
 label {
-  position: fixed;
-  right: 10px;
-  top: 50%;
   display: none;
+  position: fixed;
+  right: 20px;
+  top: 50%;
   width: 10px;
   height: 15px;
   padding: 10px;
   border: solid white;
+  background-color: teal;
 }
 label:hover {
   cursor: pointer;
@@ -33,7 +34,6 @@ label i {
 }
 @media (max-width: 768px) {
   label {
-    position: fixed;
     display: block;
   }
   .sidebar {
