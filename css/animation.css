@@ -36,7 +36,7 @@
     100% {
       color: transparent;
       transform: rotate(3600deg);
-      top: 500%;
+      top: 1000%;
       left: 30%;
     }
   }
@@ -78,7 +78,7 @@
     100% {
       color: transparent;
       transform: rotate(3600deg);
-      top: 500%;
+      top: 1000%;
       left: 50%;
     }
   }
@@ -120,7 +120,7 @@
     100% {
       color: transparent;
       transform: rotate(3600deg);
-      top: 500%;
+      top: 1000%;
       left: 60%;
     }
   }
@@ -162,7 +162,7 @@
     100% {
       color: transparent;
       transform: rotate(3600deg);
-      top: 500%;
+      top: 1000%;
       left: 20%;
     }
   }
@@ -204,7 +204,7 @@
     100% {
       color: transparent;
       transform: rotate(3600deg);
-      top: 500%;
+      top: 1000%;
       left: 40%;
     }
   }
@@ -213,7 +213,7 @@
       color: red;
       transform: rotate(0deg);
       top: 0%;
-      left: 80%;
+      left: 70%;
       visibility: visible;
     }
     10% {
@@ -246,7 +246,41 @@
     100% {
       color: transparent;
       transform: rotate(3600deg);
-      top: 500%;
-      left: 90%;
+      top: 1000%;
+      left: 80%;
+    }
+  }
+  /*Rocket*/
+  @keyframes rocket-1 {
+    0% {
+      visibility: visible;
+      top: 1000%;
+      left: 20%;
+    }
+    100% {
+      top: -100%;
+      left: 20%;
+    }
+  }
+  @keyframes rocket-2 {
+    0% {
+      visibility: visible;
+      top: 1000%;
+      left: 40%;
+    }
+    100% {
+      top: -100%;
+      left: 40%;
+    }
+  }
+  @keyframes rocket-3 {
+    0% {
+      visibility: visible;
+      top: 1000%;
+      left: 60%;
+    }
+    100% {
+      top: -100%;
+      left: 60%;
     }
   }

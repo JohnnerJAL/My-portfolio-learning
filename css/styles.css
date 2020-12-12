@@ -4,6 +4,8 @@
 body {
   background-image: url(../img/tree-and-space-pexels.jpg);
   background-size: contain;
+  background-attachment: scroll;
+  background-repeat: no-repeat;/**/
   background-repeat: repeat-y;/**/
 }
 /*-----Menu Sidebar-----*/
@@ -13,7 +15,8 @@ body {
 label {
   display: none;
   position: fixed;
-  right: 20px;
+  margin-right: 0%;
+  right: 0;
   top: 50%;
   width: 10px;
   height: 15px;
@@ -30,15 +33,28 @@ label i {
   margin: auto;
 }
 @media (max-width: 768px) {
+  nav div a:hover {
+    color: lightseagreen;
+  }
   label {
     display: block;
   }
   .sidebar {
     /*display: none;*/
     margin-left: -100%;
+    transition: 0.5s;
   }
   #sidebar-button:checked ~ .sidebar {
     margin-left: 0%;
+    transition: 0.5s;
+    background-color: rgba(23, 107, 107, 1);
+    z-index: 1;
+  }
+  .sidebar-anchors a:hover {
+    color: lightseagreen;
+  }
+  .icons i:hover {
+    color: lightseagreen;
   }
   main section.section-style {
     margin-left: 0px;
@@ -50,7 +66,8 @@ label i {
 /*--------------------Nav--------------------*/
 nav {
   position: fixed;
-  width: 100%;
+  left: 0%;
+  right: 0%;
   background-color: rgb(23, 107, 107);
   top: 0%;
   display: flex;
@@ -78,11 +95,28 @@ nav div a {
   padding: 20px;
   margin: auto;
 }
+nav div a:hover {
+  background-color: rgba(10, 51, 51, 0.322);
+}
 nav i.astronaut {
   color: white;
   padding: 20px;
   margin: auto;
   transform: scale(3);
+  animation: rocket;
+  animation-duration: 5s;
+  animation-delay: 4s;
+}
+@keyframes rocket {
+  0% {
+    position: absolute;
+    top: 500%;
+    left: 0%;
+  }
+  100% {
+    top: -500%;
+    left: 115%;
+  }
 }
 /*------------------------Sidebar------------------------*/
 section.sidebar {
@@ -96,6 +130,7 @@ section.sidebar {
   left: 10px;
   bottom: 10px;
   border-radius: 32px;
+  box-sizing: border-box;/**/
 }
 .container-sidebar {
   padding: 20px;
@@ -106,6 +141,9 @@ section.sidebar {
   text-decoration: none;
   padding: 2px;
   border-bottom: solid rgba(23, 107, 107, 0.3);
+}
+.sidebar-anchors a:hover {
+  background-color: rgba(23, 107, 107, 0.4);
 }
 .photo {
   margin-top: 20px;
@@ -120,9 +158,16 @@ section.sidebar {
 .photo i {
   transform: scale(7);
 }
+.sidebar h4 {
+  margin-top: 5%;
+  margin-bottom: 2%;
+}
 .icons i {
   padding: 8px;
-  padding-top: 0px;
+  color: white;
+}
+.icons i:hover {
+  background-color: rgba(23, 107, 107, 0.4);
 }
 /*--------------------Main--------------------*/
 /*Separators*/
@@ -141,7 +186,7 @@ section.sidebar {
   text-align: justify;
   padding: 25px;
   max-width: 350px;
-  min-width: 350px;
+  min-width: 300px;
   width: max-content;/*how*/
   margin: 20px;
   box-sizing: border-box;
@@ -197,6 +242,10 @@ section.sidebar {
   justify-content: center;
   align-items: center;
 }
+.section-welcome a:hover {
+  transform: scale(1.1);
+  box-shadow: 2px 2px 2px 2px orange, -2px -2px 2px 2px orange;
+}
 /*Animation*/
 [class*="meteorite-"] {
   position: absolute;
@@ -246,13 +295,38 @@ section.sidebar {
 [class*="meteorite"] div {
   margin: auto;
 }
+/*Animation Rocket*/
+[class*="rocket-"] {
+  position: absolute;
+  visibility: hidden;
+}
+[class*="rocket-"] i {
+  transform: scale(2) rotate(-40deg);
+}
+.rocket-1 {
+  animation: rocket-1;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-delay: 2s;
+}
+.rocket-2 {
+  animation: rocket-2;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-delay: 5s;
+}
+.rocket-3 {
+  animation: rocket-3;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-delay: 9s;
+}
 /*----------Second Section----------*/
 .section-get-in-touch {
   background-image: url(../img/leaf-pexels.jpg);
   background-size: cover;
   background-position: center;
 }
-
 /*---------Third Section What I do----------*/
 .section-what-i-do .paper {
   display: flex;
