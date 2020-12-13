@@ -179,7 +179,8 @@ section.sidebar {
   transform: scale(7);
 }
 .sidebar h4 {
-  /*border: solid;*/
+  border: solid;
+  margin: 0%;
 }
 .icons i {
   padding: 8px;
