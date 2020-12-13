@@ -55,15 +55,16 @@ label i {
   }
   .sidebar-anchors a:hover {
     color: lightseagreen;
-  }/*
+  }
+  /*
   .sidebar .container-sidebar .photo {
-    height: 120px;
+    height: 100px;
     width: 80%;
     margin: auto;
     margin-top: 10px;
   }
   .sidebar .container-sidebar .photo i {
-    transform: scale(5);
+    transform: scale(4);
   }*/
   .icons i:hover {
     color: lightseagreen;
@@ -154,6 +155,7 @@ section.sidebar {
   flex-wrap: wrap;/**/
   justify-content: space-between;
   border: solid;
+  height: 100%;
 }
 .sidebar-anchors a {
   color: white;
