@@ -41,7 +41,7 @@ label i {
     background-size: cover;
     /*background-position: center;*/
     /*background-repeat: repeat-y;*/
-    background-attachment: fixed;
+    background-attachment: local;
     /*background-color: dodgerblue;*/
   }
   nav div a:hover {
