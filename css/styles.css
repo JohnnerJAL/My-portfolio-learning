@@ -38,9 +38,9 @@ label i {
 @media (max-width: 768px) {
   body {
     background-image: url(../img/tree-and-space-pexels.jpg);
-    background-size: contain;
+    background-size: cover;
     /*background-position: center;*/
-    /*background-repeat: repeat-y;*/
+    background-repeat: repeat-y;
     background-attachment: fixed;
     /*background-color: dodgerblue;*/
   }
