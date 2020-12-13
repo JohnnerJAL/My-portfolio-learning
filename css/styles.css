@@ -146,7 +146,13 @@ section.sidebar {
   /*overflow: hidden;*/
 }
 .container-sidebar {
+  display: flex;
+  flex-direction: column;
   padding: 20px;
+  box-sizing: border-box;/**/
+  flex-wrap: wrap;/**/
+  justify-content: space-between;
+  border: solid;
 }
 .sidebar-anchors a {
   color: white;
@@ -159,7 +165,6 @@ section.sidebar {
   background-color: rgba(23, 107, 107, 0.4);
 }
 .photo {
-  margin-top: 10px;
   /*max-width: 150px;/**/
   height: 140px;
   border: 8px solid;
