@@ -56,6 +56,15 @@ label i {
   .sidebar-anchors a:hover {
     color: lightseagreen;
   }
+  .sidebar .container-sidebar .photo {
+    height: 120px;
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+  }
+  .sidebar .container-sidebar .photo i {
+    transform: scale(5);
+  }
   .icons i:hover {
     color: lightseagreen;
   }
