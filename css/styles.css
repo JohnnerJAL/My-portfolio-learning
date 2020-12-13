@@ -161,7 +161,6 @@ section.sidebar {
   color: white;
   display: block;
   text-decoration: none;
-  padding: 2px;
   border-bottom: solid rgba(23, 107, 107, 0.3);
 }
 .sidebar-anchors a:hover {
@@ -180,8 +179,7 @@ section.sidebar {
   transform: scale(7);
 }
 .sidebar h4 {
-  margin-top: 5%;
-  margin-bottom: 2%;
+  /*border: solid;*/
 }
 .icons i {
   padding: 8px;
