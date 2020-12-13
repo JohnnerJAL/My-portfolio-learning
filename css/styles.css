@@ -37,8 +37,10 @@ label i {
   body {
     background-image: url(../img/tree-and-space-pexels.jpg);
     background-size: contain;
+    background-position: center;
+    background-repeat: repeat-y;
     background-attachment: fixed;
-    background-color: dodgerblue;
+    /*background-color: dodgerblue;*/
   }
   nav div a:hover {
     color: lightseagreen;
