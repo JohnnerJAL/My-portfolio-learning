@@ -4,10 +4,10 @@
 body {
   background-image: url(../img/tree-and-space-pexels.jpg);
   background-size: contain;
-  background-attachment: scroll;
+  /*background-attachment: scroll;*/
   /*background-repeat: no-repeat;/**/
   background-repeat: repeat-y;
-  background-color: dodgerblue;
+  /*background-color: dodgerblue;*/
 }
 /*-----Menu Sidebar-----*/
 #sidebar-button {
