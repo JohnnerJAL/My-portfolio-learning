@@ -5,8 +5,9 @@ body {
   background-image: url(../img/tree-and-space-pexels.jpg);
   background-size: contain;
   background-attachment: scroll;
-  background-repeat: no-repeat;/**/
-  background-repeat: repeat-y;/**/
+  /*background-repeat: no-repeat;/**/
+  background-repeat: repeat-y;
+  background-color: dodgerblue;
 }
 /*-----Menu Sidebar-----*/
 #sidebar-button {
@@ -15,7 +16,7 @@ body {
 label {
   display: none;
   position: fixed;
-  margin-right: 0%;
+  margin-right: 0%;/**/
   right: 0;
   top: 50%;
   width: 10px;
@@ -33,6 +34,12 @@ label i {
   margin: auto;
 }
 @media (max-width: 768px) {
+  body {
+    background-image: url(../img/tree-and-space-pexels.jpg);
+    background-size: contain;
+    background-attachment: fixed;
+    background-color: dodgerblue;
+  }
   nav div a:hover {
     color: lightseagreen;
   }
@@ -301,7 +308,7 @@ section.sidebar {
   visibility: hidden;
 }
 [class*="rocket-"] i {
-  transform: scale(2) rotate(-40deg);
+  transform: scale(2) rotate(-45deg);
 }
 .rocket-1 {
   animation: rocket-1;
