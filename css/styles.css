@@ -144,11 +144,12 @@ section.sidebar {
   border-radius: 32px;
   box-sizing: border-box;/**/
   /*overflow: hidden;*/
+  padding: 10px;
 }
 .container-sidebar {
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 10px;
   box-sizing: border-box;/**/
   flex-wrap: wrap;/**/
   justify-content: space-between;
