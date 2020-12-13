@@ -144,7 +144,7 @@ section.sidebar {
   bottom: 10px;
   border-radius: 32px;
   box-sizing: border-box;/**/
-  /*overflow: hidden;*/
+  overflow: hidden;
   padding: 10px;
 }
 .container-sidebar {
@@ -179,7 +179,6 @@ section.sidebar {
   transform: scale(7);
 }
 .sidebar h4 {
-  border: solid;
   margin: 0%;
 }
 .icons i {
