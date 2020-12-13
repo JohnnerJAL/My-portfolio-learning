@@ -55,7 +55,7 @@ label i {
   }
   .sidebar-anchors a:hover {
     color: lightseagreen;
-  }
+  }/*
   .sidebar .container-sidebar .photo {
     height: 120px;
     width: 80%;
@@ -64,7 +64,7 @@ label i {
   }
   .sidebar .container-sidebar .photo i {
     transform: scale(5);
-  }
+  }*/
   .icons i:hover {
     color: lightseagreen;
   }
@@ -143,6 +143,7 @@ section.sidebar {
   bottom: 10px;
   border-radius: 32px;
   box-sizing: border-box;/**/
+  overflow: hidden;
 }
 .container-sidebar {
   padding: 20px;
