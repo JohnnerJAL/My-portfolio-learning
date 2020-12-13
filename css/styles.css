@@ -154,8 +154,8 @@ section.sidebar {
   box-sizing: border-box;/**/
   /*flex-wrap: wrap;/**/
   justify-content: space-between;
-  border: solid;
   height: 100%;
+  overflow: hidden;
 }
 .sidebar-anchors a {
   color: white;
