@@ -152,7 +152,7 @@ section.sidebar {
   flex-direction: column;
   padding: 10px;
   box-sizing: border-box;/**/
-  flex-wrap: wrap;/**/
+  /*flex-wrap: wrap;/**/
   justify-content: space-between;
   border: solid;
   height: 100%;
