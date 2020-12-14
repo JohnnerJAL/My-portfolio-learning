@@ -260,10 +260,11 @@ section.sidebar {
   font-weight: bold;
   justify-content: center;
   align-items: center;
+  box-shadow: 2px 2px 2px 2px orange, -2px -2px 2px 2px orange;
 }
 .section-welcome a:hover {
   transform: scale(1.1);
-  box-shadow: 2px 2px 2px 2px orange, -2px -2px 2px 2px orange;
+  box-shadow: 2px 2px 32px 12px orange, -2px -2px 32px 12px orange;
 }
 /*Animation*/
 [class*="meteorite-"] {
@@ -340,11 +341,43 @@ section.sidebar {
   animation-iteration-count: infinite;
   animation-delay: 9s;
 }
-/*----------Second Section----------*/
+/*----------Second Section????----------*/
 .section-get-in-touch {
   background-image: url(../img/leaf-pexels.jpg);
   background-size: cover;
   background-position: center;
+}
+/*Second Section Know me more*/
+.section-know-me-more .paper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.section-know-me-more div.computer {
+  display: flex;
+  height: 100px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 32px;
+}
+.section-know-me-more div.computer i {
+  margin: auto;
+  transform: scale(4);
+}
+.section-know-me-more .icons-network {
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 40px 0 40px;
+}
+.section-know-me-more .icons-network i {
+  color: white;
+  transform: scale(1.5);
+  padding: 4px;
+}
+.section-know-me-more .icons-network i:hover {
+  background-color: rgba(0, 128, 128, 0.9);
 }
 /*---------Third Section What I do----------*/
 .section-what-i-do .paper {
