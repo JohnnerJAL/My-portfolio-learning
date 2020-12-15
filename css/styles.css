@@ -23,14 +23,14 @@ label {
   padding: 10px;
   border: solid white;
   background-color: teal;
+  z-index: 1;
 }
 label:hover {
-  cursor: pointer;
+  cursor: pointer;/*????*/
   background: rgba(0, 128, 128, 0.5);
 }
 label i {
   color: white;
-  margin: auto;
 }
 @media (max-width: 768px) {
   body {
@@ -39,14 +39,16 @@ label i {
     background-repeat: no-repeat;
     background-attachment: fixed;
   }
+  /*
   main .section-welcome {
-    height: 450px;/*anchor more bug*/
-  }
+    height: 450px;/*anchor more bug
+  }*/
   nav div a:hover {
     color: lightseagreen;
   }
   label {
-    display: block;
+    display: flex;
+    justify-content: center;
   }
   .sidebar {
     /*display: none;*/
@@ -80,6 +82,9 @@ label i {
   }
   .section-client-speak .paper, .section-youtube .paper {
     min-width: auto;
+  }
+  .section-client-speak .click i, .section-youtube .click i {
+    transform: scale(2.5);
   }
   body footer div.footer {
     margin-left: 0px;
@@ -228,10 +233,10 @@ section.sidebar {
   flex-wrap: wrap;
 }
 .card {
-  background-color: rgb(23, 107, 107);
+  background-color: rgba(0, 128, 128, 0.5);
   padding: 15px;
-  border: solid;
-  border-radius: 8px;
+  border: solid rgba(0, 128, 128, 0.7);
+  border-radius: 32px;
   max-width: 250px;
   margin: auto;
   box-sizing: border-box;
