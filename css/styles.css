@@ -39,6 +39,9 @@ label i {
     background-repeat: no-repeat;
     background-attachment: fixed;
   }
+  main .section-welcome {
+    height: 450px;/*anchor more bug*/
+  }
   nav div a:hover {
     color: lightseagreen;
   }
@@ -74,6 +77,9 @@ label i {
   }
   main section.section-style {
     margin-left: 0px;
+  }
+  .section-client-speak .paper, .section-youtube .paper {
+    min-width: auto;
   }
   body footer div.footer {
     margin-left: 0px;
@@ -209,7 +215,7 @@ section.sidebar {
   text-align: justify;
   padding: 25px;
   max-width: 350px;
-  min-width: 300px;
+  min-width: 300px;/**/
   width: max-content;/*how*/
   margin: 20px;
   box-sizing: border-box;
