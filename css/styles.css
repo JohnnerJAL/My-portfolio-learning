@@ -32,6 +32,19 @@ label:hover {
 label i {
   color: white;
 }
+/*768 992 1200*/
+@media (max-height: 400px) /*360*/ /*(max-width: 400px) and (orientation: landscape)*/{
+  body .sidebar .photo {
+    color: red;
+    display: none;
+  }
+  body .sidebar h4 {
+    display: none;
+  }
+  body .sidebar .icons {
+    display: none;
+  }
+}
 @media (max-width: 768px) {
   body {
     background-image: url(../img/tree-and-space-pexels.jpg);
@@ -80,10 +93,14 @@ label i {
   main section.section-style {
     margin-left: 0px;
   }
-  .section-client-speak .paper, .section-youtube .paper {
+  .section-what-i-do .paper .field {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .section-feedback-score .paper, .section-youtube .paper {
     min-width: auto;
   }
-  .section-client-speak .click i, .section-youtube .click i {
+  .section-feedback-score .click i, .section-youtube .click i {
     transform: scale(2.5);
   }
   body footer div.footer {
@@ -379,6 +396,13 @@ section.sidebar {
   margin: auto;
   transform: scale(4);
 }
+.section-know-me-more .home {
+  background-image: url(../img/home.jpeg);
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+  margin-bottom: 15px;
+}
 .section-know-me-more .icons-network {
   display: flex;
   box-sizing: border-box;
@@ -417,6 +441,7 @@ section.sidebar {
 }
 .field p {
   width: 65%;
+  margin: auto;
 }
 /*----------Fourth Section My skills----------*/
 .section-my-skills .container .paper {
@@ -474,22 +499,31 @@ section.sidebar {
   width: 40%;
 }
 .counter-3 div:first-child {
-  width: 0%;
+  width: 5%;
 }
 .counter-4 div:first-child {
   width: 5%;
 }
 .counter-5 div:first-child {
-  width: 40%;
+  width: 30%;
 }
 .counter-6 div:first-child {
-  width: 5%;
+  width: 20%;
 }
 .counter-7 div:first-child {
   width: 1%;
 }
 .counter-8 div:first-child {
-  width: 40%;
+  width: 10%;
+}
+.counter-9 div:first-child {
+  width: 60%;
+}
+.counter-10 div:first-child {
+  width: 60%;
+}
+.counter-11 div:first-child {
+  width: 70%;
 }
 /*----------Fifth Section----------*/
 .section-resume .container .paper .container-academy {
@@ -534,8 +568,8 @@ section.sidebar {
 .job-pokemon-master {
   background-image: url(../img/pokemon-master-pexels.jpg);
 }
-/*----------Seventh Section Client Speak----------*/
-.section-client-speak .paper {
+/*----------Seventh Section Feedback Score----------*/
+.section-feedback-score .paper {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;/**/
@@ -615,13 +649,13 @@ section.sidebar {
   color: white;
 }
 /*----------Section Youtube*----------*/
-.section-youtube .container .paper, .section-client-speak .container .paper {
+.section-youtube .container .paper, .section-feedback-score .container .paper {
   box-sizing: border-box;/**/
   margin: auto;
   margin-top: 20px;
   margin-bottom: 10px;
 }
-.section-youtube .container, .section-client-speak .container {
+.section-youtube .container, .section-feedback-score .container {
   /*justify-content: space-between;*/
   flex-wrap: nowrap;
   box-sizing: border-box;
