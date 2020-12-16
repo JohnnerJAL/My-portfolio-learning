@@ -1,3 +1,78 @@
+/*Animation*/
+[class*="meteorite-"] {
+  position: absolute;
+  display: flex;
+  border: solid;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  visibility: hidden;
+}
+.meteorite-jal {
+  animation: meteorite-jal;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-delay: 2s;
+}
+.meteorite-la {
+  animation: meteorite-la;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-delay: 4s;
+}
+.meteorite-abb {
+  animation: meteorite-abb;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-delay: 6s;
+}
+.meteorite-k {
+  animation: meteorite-k;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-delay: 8s;
+}
+.meteorite-ma {
+  animation: meteorite-ma;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-delay: 10s;
+}
+.meteorite-pa {
+  animation: meteorite-pa;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-delay: 11s;
+}
+[class*="meteorite"] div {
+  margin: auto;
+}
+/*Animation Rocket*/
+[class*="rocket-"] {
+  position: absolute;
+  visibility: hidden;
+}
+[class*="rocket-"] i {
+  transform: scale(2) rotate(-45deg);
+}
+.rocket-1 {
+  animation: rocket-1;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-delay: 2s;
+}
+.rocket-2 {
+  animation: rocket-2;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-delay: 5s;
+}
+.rocket-3 {
+  animation: rocket-3;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-delay: 9s;
+}
 @keyframes meteorite-jal {
     0% {
       color: red;
@@ -282,5 +357,16 @@
     100% {
       top: -100%;
       left: 60%;
+    }
+  }
+  @keyframes rocket {
+    0% {
+      position: absolute;
+      top: 500%;
+      left: 0%;
+    }
+    100% {
+      top: -500%;
+      left: 115%;
     }
   }
