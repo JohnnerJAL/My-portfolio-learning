@@ -12,18 +12,8 @@
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 
-/*
-@media only screen and (max-width: 768px) {
-    /* For mobile phones: *
-    [class*="col-"] {
-      width: 100%;
-    }
-  }
-
-  */
-
-  /*768 992 1200*/
-@media (max-height: 400px) /*360*/ /*(max-width: 400px) and (orientation: landscape)*/{
+/*Media Query Landscape*/
+@media (max-height: 550px) /*360*/ /*(max-width: 400px) and (orientation: landscape)*/{
   body .sidebar .photo {
     display: none;
   }
@@ -34,6 +24,7 @@
     display: none;
   }
 }
+/*Media Query Small Screen*/
 @media (max-width: 768px) {
   body {
     background-image: url(../img/tree-and-space-pexels.jpg);
@@ -41,19 +32,15 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
   }
-  /*
-  main .section-welcome {
-    height: 450px;/*anchor more bug
-  }*/
   nav div a:hover {
     color: lightseagreen;
   }
   label {
     display: flex;
     justify-content: center;
+    align-items: center;
   }
   .sidebar {
-    /*display: none;*/
     margin-left: -100%;
     transition: 0.5s;
   }
@@ -63,26 +50,19 @@
     background-color: rgba(23, 107, 107, 1);
     z-index: 1;
   }
+  #sidebar-button:checked ~ label {
+    background-color: orange;
+  }
   .sidebar-anchors a:hover {
     color: lightseagreen;
   }
-  /*
-  .sidebar .container-sidebar .photo {
-    height: 100px;
-    width: 80%;
-    margin: auto;
-    margin-top: 10px;
-  }
-  .sidebar .container-sidebar .photo i {
-    transform: scale(4);
-  }*/
   .icons i:hover {
     color: lightseagreen;
   }
-  main section.section-style {
+  main section.style-section {
     margin-left: 0px;
   }
-  .section-what-i-do .paper .field {
+  .section-what-i-do .paper .row {
     padding-top: 10px;
     padding-bottom: 10px;
   }
